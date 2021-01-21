@@ -1,0 +1,86 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: lightgrey;
+}
+
+h1 {
+  background-color: black;
+  color: white;
+}
+
+/* Add a black background color to the top navigation */
+.mainnav {
+  background-color: #333;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.mainnav a {
+  float: left;
+  color: #f5f5f5;
+  text-align: center;
+  padding: 20px 20px;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+/* Change the color of links on hover */
+.mainnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.mainnav {
+  a {
+    .active {
+      text-decoration: underline;
+    }
+  }
+}
+
+img {
+  filter: grayscale(100%);
+}
+
+header {
+  img{
+    float:right;
+  }
+}
+
+/* About Us */
+
+  .biggerText {
+    font-weight: 800;
+  }
+
+  #gin {
+    width:100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+  .left {
+    margin: 2%;
+    float: left;
+    width: 45%;
+  }
+  .right {
+    margin: 2%;
+    float: right;
+    width: 45%;
+  }
+  #geo {
+    width:100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+
+/* footer */
+footer {
+  h2{
+    text-align: center;
+  }
+}
