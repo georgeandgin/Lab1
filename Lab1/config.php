@@ -1,5 +1,5 @@
 <?php
-$current_page = end(explode('/'), $_SERVER['REQUEST_URI']));
+$current_page = end(explode('/', $_SERVER['REQUEST_URI']));
 
     $dbserver = "";
 
