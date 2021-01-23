@@ -10,6 +10,7 @@ $current_page = end(explode('/', $_SERVER['REQUEST_URI']));
     $dbname = "";
 
         //session_start();
+        //this is a comment for Gin to show her how to use GITHUB
 ?>
 
 <?php
