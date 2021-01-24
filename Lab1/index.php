@@ -17,7 +17,7 @@
 
 <body>
 
-<!-- um wtf pls -->
+<!-- is this new?? -->
 
     <?php include ('header.php');?>
     <div id="bodybox">
