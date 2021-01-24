@@ -145,7 +145,7 @@ footer {
 
 /* About */
 .biggerText {
-  font-size: 24px;
+  font-size: 24.4px;
   font-weight: 600;
   margin-bottom: 0px;
   margin-top: 176px;
@@ -175,5 +175,9 @@ footer {
   text-align: justify;
   margin-top: 8px;
   margin-bottom: 0px;
+}
+
+#gin {
+  width: 300px;
 }
 /*# sourceMappingURL=output.css.map */
