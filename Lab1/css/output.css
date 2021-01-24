@@ -221,11 +221,26 @@ h2 {
   margin-right: 160px;
 }
 
+#georgeBio {
+  float: left;
+  text-align: justify;
+  margin-top: 100px;
+  width: 600px;
+  margin-left: 160px;
+}
+
 #descriptionGin {
   float: right;
   width: 500px;
   margin-top: 90px;
   margin-right: 90px;
+}
+
+#descriptionGeorge {
+  float: left;
+  width: 500px;
+  margin-top: 90px;
+  margin-left: 90px;
 }
 
 #gin {
@@ -236,23 +251,9 @@ h2 {
 }
 
 #geo {
+  float: left;
   width: 450px;
   margin-left: 20px;
   margin-top: 20px;
-}
-
-#georgeBio {
-  float: left;
-  text-align: justify;
-  margin-top: 100px;
-  width: 600px;
-  margin-left: 160px;
-}
-
-#descriptionGeorge {
-  float: left;
-  width: 500px;
-  margin-top: 90px;
-  margin-left: 90px;
 }
 /*# sourceMappingURL=output.css.map */
