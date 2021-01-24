@@ -141,6 +141,7 @@ input[name="r"] {
   font-weight: bold;
 }
 
+/* George's code */
 h1 {
   background-color: black;
   color: white;
@@ -186,6 +187,4 @@ img {
 footer h2 {
   text-align: center;
 }
-
-/* does this work */
 /*# sourceMappingURL=output.css.map */
