@@ -194,13 +194,6 @@ footer {
   margin-bottom: 0px;
 }
 
-#gin {
-  position: relative;
-  height: 500px;
-  margin-right: 20px;
-  margin-top: 150px;
-}
-
 h1 {
   margin-top: 20px;
   font-size: 40px;
@@ -224,5 +217,12 @@ h1 {
   width: 500px;
   margin-top: 100px;
   margin-right: 60px;
+}
+
+#gin {
+  float: right;
+  height: 500px;
+  margin-right: 20px;
+  padding-top: 180px;
 }
 /*# sourceMappingURL=output.css.map */
