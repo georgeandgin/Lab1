@@ -14,12 +14,12 @@
 
 <?php include ('header.php');?>
 
+<img id="clubImg" class="profileimg" src="img/bookClub.jpeg" alt="Portrait Photo"/>
 <div id="clubDescription">
   <p class="biggerText">JU's book club is now 10 years old</p>
   <p>Weekly book readings have been continuing for a decade. Each month we choose books that we are going to read.
       We then have informal group discussions to share our ideas and thinking. 
   </p>
-  <img id="clubImg" class="profileimg" src="img/bookClub.jpeg" alt="Portrait Photo"/>
 </div>
 
 <div class="members">
