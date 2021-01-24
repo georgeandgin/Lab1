@@ -214,6 +214,7 @@ h1 {
 
 #ginBio {
   float: right;
+  position: absolute;
   margin-top: 80px;
   width: 800px;
   margin-right: 100px;
