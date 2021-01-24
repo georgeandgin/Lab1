@@ -5,8 +5,6 @@
   <meta charset="utf-8">
 
   <title>Lab1</title>
-  <meta name="" content="">
-  <meta name="" content="">
 
   <link rel="stylesheet" href="css/output.css">
 
@@ -45,7 +43,7 @@
 
 </div>
 
-
+<?php include ('footer.php');?>
 
 </body>
 </html>
