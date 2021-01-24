@@ -15,7 +15,7 @@
 <?php include ('header.php');?>
 
 <img id="clubImg" class="profileimg" src="img/bookClub.jpeg" alt="Portrait Photo"/>
-<div id="clubDescription">
+<div class="left">
   <p class="biggerText">JU's book club is now 10 years old</p>
   <p>Weekly book readings have been continuing for a decade. Each month we choose books that we are going to read.
       We then have informal group discussions to share our ideas and thinking. 
@@ -24,14 +24,15 @@
 
 <div class="members">
 
+<img id="gin" class="profileimg" src="img/bookClubGintare.jpeg" alt="Portrait Photo"/>
 <div class="left">
 <h1>Gintare Kunigonyte</h1>
 <p class="biggerText">One of our most valuable members in the book club. She has read more than 3 books. Her dedication is outstanding!</p>
 <p>Gintare has been in our book club since 2019. You will find her in every design book discussion. In fact, she has participated in more 
     discussions than there are days in a month. Among her favourite book genres are dystopian fiction, satire, philosophy and novels.</p>
-<img id="gin" class="profileimg" src="img/bookClubGintare.jpeg" alt="Portrait Photo"/>
 </div>
 
+<img id="geo" class="profileimg" src="img/bookClubGeorge.jpg" alt="Portrait Photo"/>
 <div class="right">
 <h1>Georgi Kolev</h1>
 <p class="biggerText">Our expert in self development books. Feel free to ask him about any of those, 
@@ -40,7 +41,6 @@
   He is one of the most passionate book person that you will ever meet. You can find loads of different 
   things in his reading list, but you will surely see science fiction, self improvement and romance at 
   the top of the list!</p>
-<img id="geo" class="profileimg" src="img/bookClubGeorge.jpg" alt="Portrait Photo"/>
 </div>
 
 </div>
