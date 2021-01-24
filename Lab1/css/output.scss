@@ -143,26 +143,28 @@ footer {
 
 /* About */
 
-.biggerText{
+.biggerText {
   font-size: 40px;
-}
-
-/* George's code */
-
-
-h1 {
-  background-color: black;
-  color: white;
 }
 
 .profileimg {
   filter: grayscale(100%);
 }
 
+#clubImg {
+  margin-left: 20px;
+  width: 600px;
+}
+
+
+
+
+/* George's code */
+
 /* About Us */
 
   .biggerText {
-    font-weight: 800;
+    //font-weight: 800;
   }
 
   #gin {
