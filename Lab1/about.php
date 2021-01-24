@@ -37,8 +37,8 @@
   things in his reading list, but you will surely see science fiction, self improvement and romance at 
   the top of the list!</p>
 
+</body>
 
 <?php include ('footer.php');?>
 
-</body>
 </html>
