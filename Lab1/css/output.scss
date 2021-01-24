@@ -193,7 +193,7 @@ footer {
 }
 
 #gin {
-  float: right;
+  position: relative;
   height: 500px;
   margin-right: 20px;
   margin-top: 150px;
@@ -212,7 +212,6 @@ h1 {
 
 #ginBio{
   float: right;
-  position: absolute;
   margin-top: 80px;
   width: 800px;
   margin-right: 100px;

@@ -23,12 +23,11 @@
 </div>
 
 <img id="gin" class="profileimg" src="img/bookClubGintare.jpeg" alt="Portrait Photo"/>
-<div>
 <h1 id="nameRight">Gintare Kunigonyte</h1>
 <p class="biggerText" id="ginBio">One of our most valuable members in the book club. She has read more than 3 books. Her dedication is outstanding!</p>
 <p class="descriptionPeople">Gintare has been in our book club since 2019. You will find her in every design book discussion. In fact, she has participated in more 
     discussions than there are days in a month. Among her favourite book genres are dystopian fiction, satire, philosophy and novels.</p>
-</div>
+<img id="gin" class="profileimg" src="img/bookClubGintare.jpeg" alt="Portrait Photo"/>
 
 <img id="geo" class="profileimg" src="img/bookClubGeorge.jpg" alt="Portrait Photo"/>
 <div class="right">
