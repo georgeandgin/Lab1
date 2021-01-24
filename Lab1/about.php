@@ -28,7 +28,7 @@
 <p id="descriptionGin">Gintare has been in our book club since 2019. You will find her in every design book discussion. In fact, she has participated in more 
     discussions than there are days in a month. Among her favourite book genres are dystopian fiction, satire, philosophy and novels.</p>
 
-<h1 id="nameLeft">Georgi Kolev</h1>
+<h2 id="nameLeft">Georgi Kolev</h2>
 <img id="geo" class="profileimg" src="img/bookClubGeorge.jpg" alt="Portrait Photo"/>
 <p class="biggerText" id="georgeBio">Our expert in self development books. Feel free to ask him about any of those, 
   he will surely have an opinion on your book!</p>
