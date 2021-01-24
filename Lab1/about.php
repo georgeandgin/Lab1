@@ -18,7 +18,7 @@
 <p>Weekly book readings have been continuing for a decade. Each month we choose books that we are going to read.
     We then have informal group discussions to share our ideas and thinking. 
 </p>
-<img id="bookclubimg" src="img/bookClub.jpeg" alt="Portrait Photo"/>
+<img class="bookclubimg" src="img/bookClub.jpeg" alt="Portrait Photo"/>
 
 <div class="members">
 

@@ -148,7 +148,7 @@ footer {
   font-size: 40px;
 }
 
-#bookclubimg {
+.bookclubimg {
   -webkit-filter: grayscale(100%);
           filter: grayscale(100%);
   margin-left: 20px;
