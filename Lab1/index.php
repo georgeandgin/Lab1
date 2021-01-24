@@ -17,8 +17,6 @@
 
 <body>
 
-<!-- is this new?? -->
-
     <?php include ('header.php');?>
     <div id="bodybox">
         <p id="intro">Welcome to Jönköping’s student book club where we exchange books, 

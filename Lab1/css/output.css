@@ -240,7 +240,7 @@ h2 {
   float: left;
   width: 500px;
   margin-top: 90px;
-  margin-left: 160px;
+  margin-left: 90px;
 }
 
 #gin {
@@ -255,5 +255,9 @@ h2 {
   width: 450px;
   margin-left: 20px;
   margin-top: 20px;
+}
+
+#aboutbox {
+  margin-bottom: 1200px;
 }
 /*# sourceMappingURL=output.css.map */
