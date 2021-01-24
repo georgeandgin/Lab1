@@ -145,7 +145,7 @@ footer {
 
 /* About */
 .biggerText {
-  font-size: 60px;
+  font-size: 50px;
   font-weight: 600;
 }
 
@@ -156,13 +156,13 @@ footer {
 
 #clubImg {
   margin-left: 20px;
-  width: 600px;
+  width: 500px;
   float: left;
 }
 
 .left {
   margin-left: 40px;
   float: left;
-  width: 45%;
+  width: 400px;
 }
 /*# sourceMappingURL=output.css.map */
