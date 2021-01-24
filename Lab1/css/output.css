@@ -151,6 +151,10 @@ footer {
   margin-top: 176px;
 }
 
+.biggerText #ginBio {
+  margin-top: 271px;
+}
+
 .profileimg {
   -webkit-filter: grayscale(100%);
           filter: grayscale(100%);
