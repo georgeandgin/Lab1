@@ -148,7 +148,7 @@ h1 {
   color: white;
 }
 
-img {
+.profileimg {
   -webkit-filter: grayscale(100%);
           filter: grayscale(100%);
 }
