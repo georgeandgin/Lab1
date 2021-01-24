@@ -3,9 +3,9 @@
 <html lang="en">
 <head>
 <!-- THIS IS A COMMENT - VERSION CONTROL TESTING 101-->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,800;1,400&display=swap" rel="stylesheet">  
-  
+    <link rel="preconnect" href="https://fonts.gstatic.com/%22%3E
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,800;1,400&display=swap" rel="stylesheet">
+
     <meta charset="utf-8">
   <title>Lab1</title>
   <meta name="" content="">
