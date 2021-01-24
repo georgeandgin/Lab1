@@ -160,6 +160,7 @@ footer {
 }
 
 #clubDescription {
+  display: block;
   float: right;
 }
 /*# sourceMappingURL=output.css.map */
