@@ -146,6 +146,7 @@ footer {
 /* About */
 .biggerText {
   font-size: 40px;
+  font-weight: 600;
 }
 
 .profileimg {
@@ -160,7 +161,7 @@ footer {
 }
 
 .left {
-  margin: 20px;
+  margin-left: 40px;
   float: left;
   width: 45%;
 }
