@@ -25,7 +25,7 @@
 <div class="members">
 
 <img id="gin" class="profileimg" src="img/bookClubGintare.jpeg" alt="Portrait Photo"/>
-<div class="left">
+<div class="right">
 <h1>Gintare Kunigonyte</h1>
 <p class="biggerText">One of our most valuable members in the book club. She has read more than 3 books. Her dedication is outstanding!</p>
 <p>Gintare has been in our book club since 2019. You will find her in every design book discussion. In fact, she has participated in more 
