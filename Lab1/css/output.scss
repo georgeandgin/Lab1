@@ -151,10 +151,6 @@ footer {
   line-height: 27px;
 }
 
-#ginBio{
-  margin-top: 180px;
-}
-
 .profileimg {
   filter: grayscale(100%);
 }
@@ -198,11 +194,32 @@ footer {
 
 #gin {
   float: right;
-  width: 300px;
+  height: 500px;
   margin-right: 20px;
   margin-top: 150px;
 }
 
 h1 {
   margin-top: 20px;
+  font-size: 40px;
+}
+
+#nameRight {
+  float: right;
+  margin-right: 40px;
+  margin-top: 140px;
+}
+
+#ginBio{
+  float: right;
+  margin-top: 80px;
+  width: 800px;
+  margin-right: 100px;
+}
+
+.descriptionPeople {
+  float: right;
+  width: 500px;
+  margin-top: 100px;
+  margin-right: 60px;
 }
