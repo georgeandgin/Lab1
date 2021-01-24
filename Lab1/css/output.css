@@ -157,32 +157,4 @@ footer {
   margin-left: 20px;
   width: 600px;
 }
-
-/* George's code */
-/* About Us */
-#gin {
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-}
-
-.left {
-  margin: 2%;
-  float: left;
-  width: 45%;
-}
-
-.right {
-  margin: 2%;
-  float: right;
-  width: 45%;
-}
-
-#geo {
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-}
 /*# sourceMappingURL=output.css.map */
