@@ -156,5 +156,10 @@ footer {
 #clubImg {
   margin-left: 20px;
   width: 600px;
+  float: left;
+}
+
+#clubDescription {
+  float: right;
 }
 /*# sourceMappingURL=output.css.map */
