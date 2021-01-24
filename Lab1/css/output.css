@@ -201,7 +201,8 @@ h1 {
 
 #nameRight {
   float: right;
-  margin-right: 40px;
+  width: 100%;
+  margin-right: 20px;
   margin-top: 140px;
 }
 
@@ -223,6 +224,7 @@ h1 {
   float: right;
   height: 500px;
   margin-right: 20px;
-  padding-top: 180px;
+  margin-top: 20px;
+  width: 45%;
 }
 /*# sourceMappingURL=output.css.map */
