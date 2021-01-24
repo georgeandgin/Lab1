@@ -18,6 +18,7 @@
 <body>
 
     <?php include ('header.php');?>
+    <div id="empty"></div>
     <div id="bodybox">
         <p id="intro">Welcome to Jönköping’s student book club where we exchange books, 
             participate in discussions, recommend literature and try to 
