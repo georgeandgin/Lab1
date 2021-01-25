@@ -16,26 +16,29 @@
 
 </head>
 <body>
+
 <?php include ('header.php');?>
-<?php include ('mainnav.php');?>
+
 <!-- um wtf -->
 
-<div class="container">
-  <form action="action_page.php">
 
-    <label for="fname">First Name</label>
-    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+<div class="container2">
+  <!--ADD PHP FUNCTIONALLITY SOME DAY/ PREFERABLY SOON-->
+  <form action="">
+    
+    <input type="text" id="fname" name="firstname" placeholder="First name">
 
-    <label for="lname">Last Name</label>
-    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+    
+    <input type="text" id="lname" name="lastname" placeholder="Last name">
 
-    <label for="subject">Subject</label>
-    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+   
+    <textarea id="subject" name="subject" placeholder="What's your problem?" style="height:200px"></textarea>
 
     <input type="submit" value="Submit">
-
   </form>
 </div>
 
+<?php include ('footer.php');?>
 </body>
 </html>

@@ -15,8 +15,11 @@
 
 </head>
 <body>
+
 <?php include ('header.php');?>
-<?php include ('mainnav.php');?>
+
+
+<div class="browse">
 
 <form action="">
   <label for="fname">First name:</label><br>
@@ -24,7 +27,8 @@
   <label for="lname">Last name:</label><br>
   <input type="text" id="lname" name="lname" value=""><br><br>
   <input type="submit" value="Submit">
-</form> 
-
+</form
+> 
+</div>
 </body>
 </html>

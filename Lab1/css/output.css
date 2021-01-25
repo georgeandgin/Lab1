@@ -1,5 +1,5 @@
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   background-color: black;
   color: #f5f5f5;
 }
@@ -66,8 +66,6 @@ header img {
 
 .navigation {
   position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin-left: 83.5px;
   margin-top: 10px;
@@ -79,7 +77,6 @@ header img {
   border: 2px solid #f5f5f5;
   margin: 6px;
   cursor: pointer;
-  -webkit-transition: 0.4s;
   transition: 0.4s;
 }
 
@@ -87,7 +84,7 @@ header img {
   background: #f5f5f5;
 }
 
-input[name="r"] {
+input[name=r] {
   position: absolute;
   visibility: hidden;
 }
@@ -95,14 +92,11 @@ input[name="r"] {
 #slides {
   width: 400%;
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
 .slide {
   width: 25%;
-  -webkit-transition: 0.6s;
   transition: 0.6s;
 }
 
@@ -153,8 +147,7 @@ footer {
 }
 
 .profileimg {
-  -webkit-filter: grayscale(100%);
-          filter: grayscale(100%);
+  filter: grayscale(100%);
 }
 
 #clubImg {
@@ -260,4 +253,62 @@ h2 {
 #aboutbox {
   margin-bottom: 1900px;
 }
+
+/* mybooks */
+.container {
+  margin-right: 200px;
+}
+.container ul {
+  text-align: right;
+  list-style: none;
+}
+.container ul li {
+  margin-top: 5%;
+}
+.container .remove {
+  background-color: white;
+  color: black;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  padding: 10px 20px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+/* CONTACT FORM */
+.container2 {
+  border-radius: 5px;
+  background-color: black;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.container2 input[type=text], .container2 select, .container2 textarea {
+  font-size: 50px;
+  width: 100%;
+  padding: 12px;
+  border: 1px solid white;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+.container2 input[type=submit] {
+  background-color: white;
+  color: black;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 50px;
+}
+.container2 input[type=submit]:hover {
+  background-color: black;
+  color: white;
+}
+
 /*# sourceMappingURL=output.css.map */

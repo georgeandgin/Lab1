@@ -259,3 +259,64 @@ h2 {
   margin-bottom: 1900px;
 }
 
+/* mybooks */
+.container {
+  margin-right: 200px;
+
+ul {
+  text-align: right;
+  list-style: none;
+  
+  li {
+    margin-top: 5%;
+  }
+}
+.remove {
+  background-color: white;
+  color:black;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  padding: 10px 20px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+}
+
+/* CONTACT FORM */
+.container2 {
+  border-radius: 5px;
+  background-color: black;
+  padding: 20px;
+  margin-bottom: 20px;
+
+input[type=text], select, textarea {
+  font-size: 50px;
+  width: 100%;
+  padding: 12px;
+  border: 1px solid white;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: white;
+  color: black;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 50px;
+}
+
+input[type=submit]:hover {
+  background-color: black;
+  color: white;
+}
+}
