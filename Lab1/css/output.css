@@ -367,6 +367,7 @@ h2 {
 
 .chosen ul {
   list-style: none;
+  margin-left: 20px;
 }
 
 .chosen ul li {
