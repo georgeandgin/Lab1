@@ -206,7 +206,7 @@ h2 {
 
 #nameLeft {
   float: left;
-  width: 100%;
+  width: 90%;
   margin-left: 20px;
   margin-top: 140px;
 }
@@ -262,6 +262,7 @@ h2 {
 /* mybooks */
 .container {
   margin-right: 200px;
+  margin-bottom: 150px;
 
 ul {
   text-align: right;
@@ -321,7 +322,68 @@ input[type=submit]:hover {
 }
 }
 
+<<<<<<< HEAD
 /* MENU LINK ACTIVE OR NOT */ 
 .active {
   color: red;
+=======
+/* Browse */
+
+.browse {
+  margin-left: 20px;
+  margin-bottom: 150px;
+  input[type=text] {
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  input[type=submit] {
+    background-color: white;
+    color: black;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 158.667px;
+    font-size: 13px;
+  }
+  input[type=submit]:hover {
+    background-color: black;
+    color: white;
+  }
+}
+
+.chosen {
+  h1 {
+    text-align: left;
+    width: 90%;
+    margin-top: 50px;
+  }
+  ul {
+    list-style: none;
+    padding: 0px;
+    li {
+      margin-top: 5%;
+    }
+  }
+  input[type=submit] {
+    background-color: white;
+    color: black;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100px;
+    font-size: 13px;
+    margin-left: 30px;
+  }
+  input[type=submit]:hover {
+    background-color: black;
+    color: white;
+  }
+>>>>>>> db298fe75fabf0be22b13dc9ee6800c44731a78c
 }

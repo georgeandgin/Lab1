@@ -22,13 +22,26 @@
 <div class="browse">
 
 <form action="">
-  <label for="fname">First name:</label><br>
-  <input type="text" id="fname" name="fname" value=""><br>
-  <label for="lname">Last name:</label><br>
-  <input type="text" id="lname" name="lname" value=""><br><br>
-  <input type="submit" value="Submit">
-</form
-> 
+  <label for="author">Author:</label><br>
+  <input type="text" id="author" name="author" value=""><br>
+  <label for="title">Title:</label><br>
+  <input type="text" id="title" name="title" value=""><br><br>
+  <input type="submit" value="Search">
+</form> 
+
+<div class="chosen">
+    <h1> Chosen books </h1>
+    <ul>
+        <li>Head First PHP & MySQL, A Brain-Friendly Guide <input type="submit" value="Reserve"></li>
+        <li>Learning PHP, MySQL & JavaScript (4th Edition) <input type="submit" value="Reserve"></li>
+        <li>PHP 7 - for building interactive websites (In easy steps) <input type="submit" value="Reserve"></li>
+    </ul>
 </div>
+
+</div>
+
 </body>
+
+<?php include ('footer.php');?>
+
 </html>
