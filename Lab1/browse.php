@@ -34,9 +34,9 @@
 <div class="chosen">
     <h1> Chosen books </h1>
     <ul>
-        <li>Head First PHP & MySQL, A Brain-Friendly Guide <input type="reserve" value="Reserve"></li>
-        <li>Learning PHP, MySQL & JavaScript (4th Edition) <input type="reserve" value="Reserve"></li>
-        <li>PHP 7 - for building interactive websites (In easy steps) <input type="reserve" value="Reserve"></li>
+        <li>Head First PHP & MySQL, A Brain-Friendly Guide <input type="submit" value="Reserve"></li>
+        <li>Learning PHP, MySQL & JavaScript (4th Edition) <input type="submit" value="Reserve"></li>
+        <li>PHP 7 - for building interactive websites (In easy steps) <input type="submit" value="Reserve"></li>
     </ul>
 </div>
 
