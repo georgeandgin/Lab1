@@ -391,4 +391,9 @@ h2 {
   background-color: black;
   color: white;
 }
+
+/* ACTIVE PAGE COLOR */
+.active {
+  font-weight: 800;
+}
 /*# sourceMappingURL=output.css.map */
