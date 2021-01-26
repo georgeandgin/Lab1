@@ -329,6 +329,7 @@ h2 {
 /* Browse */
 .browse {
   margin-left: 20px;
+  margin-bottom: 100px;
 }
 
 .browse input[type=text] {
