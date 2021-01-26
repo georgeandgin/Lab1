@@ -22,10 +22,10 @@
 <div class="browse">
 
 <form action="">
-  <label for="fname">Author:</label><br>
-  <input type="text" id="fname" name="fname" value=""><br>
-  <label for="lname">Title:</label><br>
-  <input type="text" id="lname" name="lname" value=""><br><br>
+  <label for="author">Author:</label><br>
+  <input type="text" id="author" name="author" value=""><br>
+  <label for="title">Title:</label><br>
+  <input type="text" id="title" name="title" value=""><br><br>
   <input type="submit" value="Search">
 </form> 
 
