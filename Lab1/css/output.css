@@ -359,7 +359,7 @@ h2 {
 }
 
 .chosen h1 {
-  float: left;
+  text-align: left;
   width: 100%;
 }
 /*# sourceMappingURL=output.css.map */
