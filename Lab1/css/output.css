@@ -1,17 +1,377 @@
-/* Error: expected "{".
- *     ,
- * 388 | >>>>>>> db298fe75fabf0be22b13dc9ee6800c44731a78c
- *     |                                                 ^
- *     '
- *   output.scss 388:49  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: 'Error: expected "{".\a     \2577 \a 388 \2502  >>>>>>> db298fe75fabf0be22b13dc9ee6800c44731a78c\d\a     \2502                                                  ^\a     \2575 \a   output.scss 388:49  root stylesheet';
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: black;
+  color: #f5f5f5;
 }
+
+#bodybox {
+  margin-bottom: 900px;
+}
+
+/* Style the links inside the navigation bar */
+.mainnav a {
+  float: left;
+  color: #f5f5f5;
+  padding: 20px 20px;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+/* Underline links on hover */
+.mainnav a:hover {
+  text-decoration: underline;
+}
+
+/* Logo */
+header img {
+  float: right;
+  width: 20%;
+  margin-top: 7px;
+}
+
+#siteheader {
+  height: 250px;
+  margin-bottom: 20px;
+}
+
+#intro {
+  width: 600px;
+  text-align: justify;
+  color: #f5f5f5;
+  font-size: 25px;
+  line-height: 32px;
+  margin-top: 20px;
+  margin-left: 70px;
+}
+
+#monthly {
+  color: #f5f5f5;
+  font-size: 55px;
+  font-style: italic;
+  position: absolute;
+  margin-top: 100px;
+  margin-left: 470px;
+}
+
+/* Slider */
+#slider {
+  height: 480px;
+  width: 315px;
+  overflow: hidden;
+  margin-right: 200px;
+  margin-top: 190px;
+  margin-bottom: 300px;
+  float: right;
+}
+
+.navigation {
+  position: absolute;
+  display: flex;
+  margin-left: 83.5px;
+  margin-top: 10px;
+}
+
+.bar {
+  width: 25px;
+  height: 15px;
+  border: 2px solid #f5f5f5;
+  margin: 6px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.bar:hover {
+  background: #f5f5f5;
+}
+
+input[name=r] {
+  position: absolute;
+  visibility: hidden;
+}
+
+#slides {
+  width: 400%;
+  height: 100%;
+  display: flex;
+}
+
+.slide {
+  width: 25%;
+  transition: 0.6s;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+}
+
+#r1:checked ~ .s1 {
+  margin-left: 0;
+}
+
+#r2:checked ~ .s2 {
+  margin-left: -25%;
+}
+
+#r3:checked ~ .s3 {
+  margin-left: -50%;
+}
+
+#r4:checked ~ .s4 {
+  margin-left: -75%;
+}
+
+/* Footer */
+footer {
+  border-top: 0.25px solid #f5f5f5;
+  margin-left: 20px;
+  margin-right: 20px;
+  color: #f5f5f5;
+  font-size: 12px;
+  margin-bottom: 50px;
+}
+
+#contact {
+  margin-top: 20px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+/* About */
+.biggerText {
+  font-size: 24.4px;
+  font-weight: 600;
+  margin-bottom: 0px;
+  margin-top: 176px;
+  line-height: 27px;
+}
+
+.profileimg {
+  filter: grayscale(100%);
+}
+
+#clubImg {
+  margin-left: 20px;
+  width: 500px;
+  float: left;
+}
+
+.left {
+  margin-left: 40px;
+  float: left;
+  width: 500px;
+  text-align: justify;
+}
+
+.description {
+  font-size: 18px;
+  line-height: 24px;
+  width: 420px;
+  text-align: justify;
+  margin-top: 8px;
+  margin-bottom: 0px;
+}
+
+.descriptionPeople {
+  font-size: 18px;
+  line-height: 24px;
+  width: 490px;
+  text-align: justify;
+  margin-top: 8px;
+  margin-bottom: 0px;
+}
+
+h1 {
+  margin-top: 20px;
+  text-align: right;
+  font-size: 40px;
+}
+
+h2 {
+  margin-top: 20px;
+  font-size: 40px;
+}
+
+#nameRight {
+  float: right;
+  width: 100%;
+  margin-right: 40px;
+  margin-top: 140px;
+}
+
+#nameLeft {
+  float: left;
+  width: 90%;
+  margin-left: 20px;
+  margin-top: 140px;
+}
+
+#ginBio {
+  float: right;
+  text-align: justify;
+  margin-top: 100px;
+  width: 600px;
+  margin-right: 160px;
+}
+
+#georgeBio {
+  float: left;
+  text-align: justify;
+  margin-top: 100px;
+  width: 600px;
+  margin-left: 90px;
+}
+
+#descriptionGin {
+  float: right;
+  width: 500px;
+  margin-top: 90px;
+  margin-right: 90px;
+}
+
+#descriptionGeorge {
+  float: left;
+  width: 500px;
+  margin-top: 90px;
+  margin-left: 190px;
+}
+
+#gin {
+  float: right;
+  height: 500px;
+  margin-right: 40px;
+  margin-top: 20px;
+}
+
+#geo {
+  float: left;
+  width: 450px;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+#aboutbox {
+  margin-bottom: 1900px;
+}
+
+/* mybooks */
+.container {
+  margin-right: 200px;
+  margin-bottom: 150px;
+}
+.container ul {
+  text-align: right;
+  list-style: none;
+}
+.container ul li {
+  margin-top: 5%;
+}
+.container .remove {
+  background-color: white;
+  color: black;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  padding: 10px 20px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+/* CONTACT FORM */
+.container2 {
+  border-radius: 5px;
+  background-color: black;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.container2 input[type=text], .container2 select, .container2 textarea {
+  font-size: 50px;
+  width: 100%;
+  padding: 12px;
+  border: 1px solid white;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+.container2 input[type=submit] {
+  background-color: white;
+  color: black;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 50px;
+}
+.container2 input[type=submit]:hover {
+  background-color: black;
+  color: white;
+}
+
+/* MENU LINK ACTIVE OR NOT */
+.active {
+  color: red;
+}
+
+/* Browse */
+.browse {
+  margin-left: 20px;
+  margin-bottom: 150px;
+}
+.browse input[type=text] {
+  padding: 10px;
+  border: 1px solid white;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+.browse input[type=submit] {
+  background-color: white;
+  color: black;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 158.667px;
+  font-size: 13px;
+}
+.browse input[type=submit]:hover {
+  background-color: black;
+  color: white;
+}
+
+.chosen h1 {
+  text-align: left;
+  width: 90%;
+  margin-top: 50px;
+}
+.chosen ul {
+  list-style: none;
+  padding: 0px;
+}
+.chosen ul li {
+  margin-top: 5%;
+}
+.chosen input[type=submit] {
+  background-color: white;
+  color: black;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100px;
+  font-size: 13px;
+  margin-left: 30px;
+}
+.chosen input[type=submit]:hover {
+  background-color: black;
+  color: white;
+}
+
+/*# sourceMappingURL=output.css.map */
