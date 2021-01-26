@@ -357,4 +357,8 @@ h2 {
   background-color: black;
   color: white;
 }
+
+.chosen h1 {
+  float: left;
+}
 /*# sourceMappingURL=output.css.map */
