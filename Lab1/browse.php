@@ -29,8 +29,6 @@
   <input type="submit" value="Search">
 </form> 
 
-</div>
-
 <div class="chosen">
     <h1> Chosen books </h1>
     <ul>
@@ -38,6 +36,8 @@
         <li>Learning PHP, MySQL & JavaScript (4th Edition) <input type="submit" value="Reserve"></li>
         <li>PHP 7 - for building interactive websites (In easy steps) <input type="submit" value="Reserve"></li>
     </ul>
+</div>
+
 </div>
 
 </body>
