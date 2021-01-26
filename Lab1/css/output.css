@@ -364,4 +364,12 @@ h2 {
   margin-top: 50px;
   margin-left: 20px;
 }
+
+.chosen ul {
+  list-style: none;
+}
+
+.chosen ul li {
+  margin-top: 5%;
+}
 /*# sourceMappingURL=output.css.map */
