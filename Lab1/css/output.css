@@ -326,11 +326,6 @@ h2 {
   color: white;
 }
 
-/* MENU LINK ACTIVE OR NOT */
-.active {
-  color: red;
-}
-
 /* Browse */
 .browse {
   margin-left: 20px;
