@@ -311,4 +311,9 @@ h2 {
   color: white;
 }
 
+/* MENU LINK ACTIVE OR NOT */
+.active {
+  color: red;
+}
+
 /*# sourceMappingURL=output.css.map */
