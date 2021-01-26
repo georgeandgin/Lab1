@@ -367,6 +367,7 @@ h2 {
 
 .chosen ul {
   list-style: none;
+  padding: 0px;
 }
 
 .chosen ul li {
