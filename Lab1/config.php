@@ -1,20 +1,13 @@
 <?php
-$current_page = end(explode('/', $_SERVER['REQUEST_URI']));
 
-    $dbserver = "";
+$current_page = explode('/', $_SERVER['REQUEST_URI']);
+$current_page = end($current_page);
 
-    $dbuser = "";
+$host = "localhost";
+$user = "root";
+$password = "";
+$database = "bookclub";
 
-    $dbpass = "";
-
-    $dbname = "";
-
-        //session_start();
-        //this is a comment for Gin to show her how to use GITHUB
-?>
-
-<?php
-
-$current_page = basename($_SERVER['PHP_SELF']);
+session_start();
 
 ?>

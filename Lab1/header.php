@@ -4,6 +4,7 @@
 
         <?php
             $current_page = basename($_SERVER['PHP_SELF']);
+            
             // ASK WHY THIS DOESN'T WORK - A GUY ON THE INTERNET TOLD ME IT SHOULD
             // $current_page = $_SERVER['REQUEST_URI'];
 
@@ -11,7 +12,7 @@
             //Globally defined variables ? 
             //How do they work
         ?>
-        
+
         <div class="mainnav">
         
             <a class="<?php echo ($current_page == "index.php" || $current_page == "") ? "active" : "" ?>" href="index.php">Home</a>
