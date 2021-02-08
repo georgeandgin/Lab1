@@ -2,6 +2,9 @@
 
 <html lang="en">
 <head>
+<?php include ('config.php');?>
+<?php include ('connect.php');?>
+<?php include ('connect.php');?>
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,800;1,400&display=swap" rel="stylesheet">  
@@ -30,12 +33,32 @@
 </form> 
 
 <div class="chosen">
-    <h1> Chosen books </h1>
-    <ul>
-        <li>Head First PHP & MySQL, A Brain-Friendly Guide <input type="submit" value="Reserve"></li>
-        <li>Learning PHP, MySQL & JavaScript (4th Edition) <input type="submit" value="Reserve"></li>
-        <li>PHP 7 - for building interactive websites (In easy steps) <input type="submit" value="Reserve"></li>
-    </ul>
+    <h1> Choose books </h1>
+
+
+    <?php
+      $query = "SELECT * from book";
+      $stmt;
+      $stmt = $db->prepare($query);
+      $stmt->bind_result($ISBN, $Title, $NoPages, $NoEdition, $NoCopies, $PubYear, $Publisher, $AuthorID);
+      $stmt->execute();
+
+      echo "<ul>";
+
+      while ($stmt->fetch()){
+        echo "<li> <b> $Title </b><i>published $PubYear with $NoPages pages </i>- Only $NoCopies copies left! <input action='reserve.php' method='UPDATE' type='submit' value='Reserve'> </li>";
+        echo "<br>";
+        echo "<li>$AuthorID</li>";
+        echo "<br>";
+      }
+
+      echo "</ul>";
+
+      $stmt->close();
+
+    ?>
+
+
 </div>
 
 </div>
