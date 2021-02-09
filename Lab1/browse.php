@@ -24,7 +24,7 @@
 
 <div class="browse">
 
-<form action="include/reserve.php" method="POST">
+<form action="">
   <label for="author">Author:</label><br>
   <input type="text" id="author" name="author" value=""><br>
   <label for="title">Title:</label><br>
@@ -46,7 +46,7 @@
       echo "<ul>";
 
       while ($stmt->fetch()){
-        echo "<li> <b> $Title </b><i>published $PubYear with $NoPages pages </i>- Only $NoCopies copies left! <input action='reserve.php' method='UPDATE' type='submit' value='Reserve'> </li>";
+        echo "<li> <b> $Title </b><i>published $PubYear with $NoPages pages </i>- Only $NoCopies copies left! <input action='include/reserve.php' method='POST' type='submit' value='Reserve'> </li>";
         echo "<br>";
         echo "<li>$AuthorID</li>";
         echo "<br>";
