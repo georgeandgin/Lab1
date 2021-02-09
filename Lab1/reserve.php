@@ -2,6 +2,7 @@
 include ('config.php');
 include ('connect.php');
 
+echo "BUTTON WORKING";
 
 /*
 $NoCopies;
@@ -14,6 +15,7 @@ $query = "UPDATE `book` SET `NoCopies`= `NoCopies` - 1 WHERE `ISBN` = '".intval(
     $NoCopies = $_UPDATE[""];
 
 header("Location: index.php?added=true");
+
 */
     //prompt function
     /* function prompt($prompt_msg){
@@ -30,10 +32,5 @@ header("Location: index.php?added=true");
     $output_msg = "Hello there ".$name."!";
     echo($output_msg);
     */
-
-    $('#profileclick').click(function(){    
-        alert('Your details have been updated');       
-   });
-
 
 ?>
