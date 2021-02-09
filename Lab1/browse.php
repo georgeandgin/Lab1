@@ -24,7 +24,7 @@
 
 <div class="browse">
 
-<form action="">
+<form action="include/reserve.php" method="POST">
   <label for="author">Author:</label><br>
   <input type="text" id="author" name="author" value=""><br>
   <label for="title">Title:</label><br>
