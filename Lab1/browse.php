@@ -46,7 +46,7 @@
       echo "<ul>";
 
       while ($stmt->fetch()){
-        echo "<li> <b> $Title </b><i>published $PubYear with $NoPages pages </i>- Only $NoCopies copies left! <input action='include/reserve.php' method='POST' type='submit' value='Reserve'> </li>";
+        echo "<li> <b> $Title </b><i>published $PubYear with $NoPages pages </i>- Only $NoCopies copies left! <form action='reserve.php' method='POST'><input type='submit' value='Reserve'></form> </li>";
         echo "<br>";
         echo "<li>$AuthorID</li>";
         echo "<br>";
