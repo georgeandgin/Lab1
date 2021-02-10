@@ -46,7 +46,8 @@
       echo "<ul>";
 
       while ($stmt->fetch()){
-        if ($NoCopies > 0){echo "<li> <b> $Title </b><i>published $PubYear with $NoPages pages </i>- Only $NoCopies copies left! <form action='reserve.php' method='POST'><input type='submit' name='sub' value='Reserve'></form> </li>";
+        if ($NoCopies > 0){
+        echo "<li> <b> $Title </b><i>published $PubYear with $NoPages pages </i>- Only $NoCopies copies left! <form action='reserve.php' method='POST'><input ID=$id type='submit' name='sub' value='Reserve'></form> </li>";
         echo "<br>";
         echo "<li>$AuthorID</li>";
         echo "<br>";
@@ -57,6 +58,7 @@
           echo "<li>$AuthorID</li>";
           echo "<br>";
         }
+        $id=$id+1;
       }
 
       echo "</ul>";
