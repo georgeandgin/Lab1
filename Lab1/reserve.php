@@ -2,6 +2,21 @@
 include ('config.php');
 include ('connect.php');
 
+
+    $query = "UPDATE `Book` SET `NoCopies` = `NoCopies` - '1' WHERE `Book`.`ISBN` = '0062676156'";
+
+    $result = mysqli_query($db, $query);
+
+    header("Location: browse.php?added=true");
+
+
+/*while (`NoCopies` > '0') {
+$query = "UPDATE `Book` SET `NoCopies` = `NoCopies` - '1' WHERE `Book`.`ISBN` = '0062676156'";
+
+$result = mysqli_query($db, $query);
+
+header("Location: browse.php?added=true");}*/
+
 /*$NoCopies;
 
 $query = "UPDATE `Book` SET `NoCopies`= `NoCopies` - 1 WHERE `Title` = '0062676156'";
