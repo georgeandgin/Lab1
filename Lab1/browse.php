@@ -46,12 +46,16 @@
       echo "<ul>";
 
       while ($stmt->fetch()){
-        echo "<li> <b> $Title </b><i>published $PubYear with $NoPages pages </i>- Only $NoCopies copies left! <form action='reserve.php' method='POST'><input type='submit' name='sub' value='Reserve'></form> </li>";
+        if ($NoCopies > 0){echo "<li> <b> $Title </b><i>published $PubYear with $NoPages pages </i>- Only $NoCopies copies left! <form action='reserve.php' method='POST'><input type='submit' name='sub' value='Reserve'></form> </li>";
         echo "<br>";
         echo "<li>$AuthorID</li>";
         echo "<br>";
-        if ($NoCopies == 0){
-          
+        }
+        if ($NoCopies == 1){
+          echo "<li> <b> $Title </b><i>published $PubYear with $NoPages pages </i>- Only $NoCopies copies left! <form action='reserve.php' method='POST'></form> </li>";
+          echo "<br>";
+          echo "<li>$AuthorID</li>";
+          echo "<br>";
         }
       }
 
