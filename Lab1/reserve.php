@@ -2,12 +2,26 @@
 include ('config.php');
 include ('connect.php');
 
+if(isset($_POST['ISBN'])){
 
-    $query = "UPDATE `Book` SET `NoCopies` = `NoCopies` - '1' WHERE `Book`.`ISBN` = '0062676156'";
+    $ISBN = $_POST['ISBN'];
+
+    $query = "UPDATE `Book` SET `NoCopies` = `NoCopies` - '1' WHERE ISBN = '$ISBN'";
+
+    $query = "INSERT INTO MyBooks SELECT ISBN FROM Book";
 
     $result = mysqli_query($db, $query);
 
-    header("Location: browse.php?added=true");
+    header("Location: browse.php?added=$ISBN");
+}
+
+    /*$id = $_POST['ISBN'];
+
+    $query = "UPDATE `Book` SET `NoCopies` = `NoCopies` - '1' WHERE ISBN = '$id'";
+
+    $result = mysqli_query($db, $query);
+
+    header("Location: browse.php?added=true");*/
 
 
 /*while (`NoCopies` > '0') {

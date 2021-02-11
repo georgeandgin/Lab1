@@ -45,21 +45,16 @@
 
       echo "<ul>";
       
-      $id=0;
 
       while ($stmt->fetch()){
+        echo "$ISBN";
         if ($NoCopies > 0){
-        $id=$id+1;
-        echo "<li> <b> $Title </b><i>published $PubYear with $NoPages pages </i>- Only $NoCopies copies left! <form action='reserve.php' method='POST'><input ID=$id type='submit' name='sub' value='Reserve'></form> </li>";
+        echo "<li> <b> $Title </b><i>published $PubYear with $NoPages pages </i>
+        - Only $NoCopies copies left! <form action='mybooks.php'><form action='reserve.php' method='POST'>
+        <input type='hidden' name='ISBN' value='$ISBN'>
+        <button type='submit' onclick='mybooks.php''>Reserve</button></form></form></li>";
         echo "<br>";
-        echo "<li>$AuthorID</li>";
         echo "<br>";
-        }
-        if ($NoCopies == 1){
-          echo "<li> <b> $Title </b><i>published $PubYear with $NoPages pages </i>- Only $NoCopies copies left! <form action='reserve.php' method='POST'></form> </li>";
-          echo "<br>";
-          echo "<li>$AuthorID</li>";
-          echo "<br>";
         }
       }
 
