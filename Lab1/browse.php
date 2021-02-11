@@ -47,12 +47,11 @@
       
 
       while ($stmt->fetch()){
-        echo "$ISBN";
         if ($NoCopies > 0){
         echo "<li> <b> $Title </b><i>published $PubYear with $NoPages pages </i>
-        - Only $NoCopies copies left! <form action='mybooks.php'><form action='reserve.php' method='POST'>
+        - Only $NoCopies copies left! <form action='reserve.php' method='POST'>
         <input type='hidden' name='ISBN' value='$ISBN'>
-        <button type='submit' onclick='mybooks.php''>Reserve</button></form></form></li>";
+        <button type='submit' onclick='mybooks.php''>Reserve</button></form></li>";
         echo "<br>";
         echo "<br>";
         }
