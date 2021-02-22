@@ -1,34 +1,39 @@
-<?php
-  include 'connect.php';
-  include 'config.php';
+<!doctype html>
 
-?>
+<html lang="en">
+<head>
+  <?php include ('config.php');?>
+  <?php include ('connect.php');?>
 
+  <meta charset="utf-8">
 
+  <title>Lab1</title>
 
-<html lang = "en">
+  <link rel="stylesheet" href="css/output.css">
+
+</head>
+
 <body>
-<?php include "header.php"?>
-  <header>
-    <img id="cover" src="images/library-image.jpg"/>
-    <img id="arrow" src="images/arrow.png"/>
-    <h1> Look at these beautiful images</h1>
+
+<?php include ('header.php');?>
+
+<header>
+    <img id="cover" src="img/bookClub.jpeg"/>
+    <img id="arrow" src="img/arrow.png"/>
   </header>
   <div class="main">
-    <h2>Gallery</h2>
 
-    <div class="galleryflex">
+    <div id="gallery">
       <?php
 
-        $query = "SELECT fileName from uploads";
-
+        $query = "SELECT fileName from GalleryImages";
 
         $stmt = $db->prepare($query);
         $stmt->bind_result($fileName);
         $stmt->execute();
 
         while ($stmt->fetch()) {
-          echo "<img src='images/uploads/" . $fileName . "'/>";
+          echo "<img src='img/GalleryImages/" . $fileName . "'/>";
         }
 
         $stmt->close();
@@ -37,11 +42,10 @@
     </div>
 
 
-
-
-
-
   </div>
-  <?php include "footer.php"?>
+
 </body>
+
+<?php include ('footer.php');?>
+
 </html>

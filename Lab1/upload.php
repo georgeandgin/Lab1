@@ -1,14 +1,41 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <?php include ('config.php');?>
+  <?php include ('connect.php');?>
+  <?php
+    //Only allows usertype==1
+
+    if($_SESSION["userType"]!=1)
+    {
+        header("Location: index.php");
+    }
+    ?>
+
+  <meta charset="utf-8">
+
+  <title>Lab1</title>
+
+</head>
+
+<body>
+
+<?php include ('header.php');?>
+
+<header>
+    <img id="cover" src="img/bookClub.jpeg"/>
+    <img id="arrow" src="img/arrow.png"/>
+</header>
+
 <?php
 
-include 'connect.php';
-include 'config.php';
-
-$target_dir = "../images/uploads/";
+$target_dir = "img/gallery/";
 $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
 $uploadOk = 1;
 $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
 
-// Checking image file
+// Check if it's img and not other file
 if(isset($_POST["submit"])) {
   $check = getimagesize($_FILES["fileToUpload"]["tmp_name"]);
   if($check !== false) {
@@ -72,3 +99,10 @@ if ($uploadOk == 0) {
 }
 
 ?>
+
+
+</body>
+
+<?php include ('footer.php');?>
+
+</html>
