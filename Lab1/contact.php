@@ -19,9 +19,6 @@
 
 <?php include ('header.php');?>
 
-<!-- um wtf -->
-
-
 <div class="container2">
   <!--ADD PHP FUNCTIONALLITY SOME DAY/ PREFERABLY SOON-->
   <form action="">
