@@ -4,14 +4,6 @@
 <head>
   <?php include ('config.php');?>
   <?php include ('connect.php');?>
-  <?php
-    //Only allows usertype==1
-
-    if($_SESSION["userType"]!=1)
-    {
-        header("Location: index.php");
-    }
-    ?>
 
   <meta charset="utf-8">
 
@@ -23,19 +15,14 @@
 
 <?php include ('header.php');?>
 
-<header>
-    <img id="cover" src="img/bookClub.jpeg"/>
-    <img id="arrow" src="img/arrow.png"/>
-</header>
 
 <?php
-
-$target_dir = "img/gallery/";
+$target_dir = "gallery/";
 $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
 $uploadOk = 1;
 $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
 
-// Check if it's img and not other file
+// Check if image file is a actual image or fake image
 if(isset($_POST["submit"])) {
   $check = getimagesize($_FILES["fileToUpload"]["tmp_name"]);
   if($check !== false) {
@@ -47,39 +34,36 @@ if(isset($_POST["submit"])) {
   }
 }
 
-//Checking if file exists
+// Check if file already exists
 if (file_exists($target_file)) {
   echo "Sorry, file already exists.";
   $uploadOk = 0;
 }
 
-
-// Checking the file size
-if ($_FILES["fileToUpload"]["size"] > 5000000) {
+// Check file size
+if ($_FILES["fileToUpload"]["size"] > 500000) {
   echo "Sorry, your file is too large.";
   $uploadOk = 0;
 }
 
-
-// Whitelisting file formats
+// Allow certain file formats
 if($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg"
 && $imageFileType != "gif" ) {
   echo "Sorry, only JPG, JPEG, PNG & GIF files are allowed.";
   $uploadOk = 0;
 }
 
-
-// If uploadOK is 1 save the file
+// Check if $uploadOk is set to 0 by an error
 if ($uploadOk == 0) {
   echo "Sorry, your file was not uploaded.";
+// if everything is ok, try to upload file
 } else {
   if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
     echo "The file ". htmlspecialchars( basename( $_FILES["fileToUpload"]["name"])). " has been uploaded.";
 
-
     //save the directory in the database
-    $query = "INSERT INTO uploads (fileName, fileType, fileSize) VALUES (?, ?, ?)";
-
+    $query = "INSERT INTO GalleryImages (fileName, fileType, fileSize) VALUES (?, ?, ?)";
+  
     echo "<br> The query: " . $query;
 
     $stmt = $db->prepare($query);
@@ -89,17 +73,14 @@ if ($uploadOk == 0) {
 
     $stmt->close();
 
-    header("Location: ../gallery.php");
-
-
+    header("Location: gallery.php");
   } else {
     echo "Sorry, there was an error uploading your file.";
-    header("Location: ../admin.php");
+    header("Location: admin.php");
   }
 }
 
 ?>
-
 
 </body>
 

@@ -33,7 +33,8 @@
         $stmt->execute();
 
         while ($stmt->fetch()) {
-          echo "<img src='img/GalleryImages/" . $fileName . "'/>";
+          echo "<img src='gallery/" . $fileName . "'/>";
+          echo "$fileName";
         }
 
         $stmt->close();
