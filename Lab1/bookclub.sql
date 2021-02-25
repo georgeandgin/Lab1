@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Feb 08, 2021 at 05:54 PM
+-- Generation Time: Feb 25, 2021 at 09:11 AM
 -- Server version: 10.4.17-MariaDB
 -- PHP Version: 7.4.14
 
@@ -74,13 +74,13 @@ CREATE TABLE `Book` (
 --
 
 INSERT INTO `Book` (`ISBN`, `Title`, `NoPages`, `NoEdition`, `NoCopies`, `PubYear`, `Publisher`, `AuthorID`) VALUES
-('0062676156', 'Census', 232, 1, 1, 2018, 'Ecco', 8),
-('0099910101', 'A Farewell to Arms', 239, 2, 2, 2004, 'Arrow Books', 5),
+('0062676156', 'Census', 232, 1, 3, 2018, 'Ecco', 8),
+('0099910101', 'A Farewell to Arms', 239, 2, 1, 2004, 'Arrow Books', 5),
 ('0140447938', 'War and Peace', 1440, 4, 2, 2009, 'Oxford University Press', 6),
 ('0141182709', 'Animal Farm', 141, 1, 2, 1996, 'Signet Classics', 2),
 ('0143035008', 'Anna Karenina', 864, 3, 2, 2004, 'Penguin Classics', 6),
-('0307278581', 'Exile and the Kingdom', 166, 4, 2, 2007, 'Vintage', 3),
-('0307908488', 'Silence Once Begun', 232, 1, 1, 2014, 'Pantheon', 8),
+('0307278581', 'Exile and the Kingdom', 166, 4, 3, 2007, 'Vintage', 3),
+('0307908488', 'Silence Once Begun', 232, 1, 5, 2014, 'Pantheon', 8),
 ('0449300021', 'Les Misérables', 334, 2, 3, 1982, 'Random House Publishing Group', 10),
 ('0451527887', 'The Hunchback of Notre-Dame', 510, 3, 2, 2001, 'Signet Classics', 10),
 ('0553213008', 'A Midsummer Night\'s Dream', 240, 1, 2, 2016, 'Simon & Schuster', 1),
@@ -102,6 +102,97 @@ INSERT INTO `Book` (`ISBN`, `Title`, `NoPages`, `NoEdition`, `NoCopies`, `PubYea
 ('1580495788', 'Romeo and Juliet', 301, 2, 2, 2004, 'Simon Schuster', 1),
 ('1593766351', 'Knockout', 205, 1, 2, 2016, 'Soft Skull Press', 9);
 
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `GalleryImages`
+--
+
+CREATE TABLE `GalleryImages` (
+  `fileName` varchar(200) NOT NULL,
+  `fileType` varchar(4) NOT NULL,
+  `fileSize` int(5) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `GalleryImages`
+--
+
+INSERT INTO `GalleryImages` (`fileName`, `fileType`, `fileSize`) VALUES
+('books2.jpg', 'jpg', 10408),
+('google4.jpg', 'jpg', 187941);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `MyBooks`
+--
+
+CREATE TABLE `MyBooks` (
+  `ISBN` varchar(10) NOT NULL,
+  `Title` varchar(2083) NOT NULL,
+  `NoPages` int(4) NOT NULL,
+  `NoEdition` int(2) NOT NULL,
+  `NoCopies` int(2) DEFAULT NULL,
+  `PubYear` int(4) NOT NULL,
+  `Publisher` varchar(2083) NOT NULL,
+  `AuthorID` int(4) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `MyBooks`
+--
+
+INSERT INTO `MyBooks` (`ISBN`, `Title`, `NoPages`, `NoEdition`, `NoCopies`, `PubYear`, `Publisher`, `AuthorID`) VALUES
+('0062676156', 'Census', 232, 1, 0, 2018, 'Ecco', 8),
+('0099910101', 'A Farewell to Arms', 239, 2, 4, 2004, 'Arrow Books', 5),
+('0140447938', 'War and Peace', 1440, 4, 0, 2009, 'Oxford University Press', 6),
+('0141182709', 'Animal Farm', 141, 1, 0, 1996, 'Signet Classics', 2),
+('0143035008', 'Anna Karenina', 864, 3, 0, 2004, 'Penguin Classics', 6),
+('0307278581', 'Exile and the Kingdom', 166, 4, 0, 2007, 'Vintage', 3),
+('0307908488', 'Silence Once Begun', 232, 1, 0, 2014, 'Pantheon', 8),
+('0449300021', 'Les Misérables', 334, 2, 0, 1982, 'Random House Publishing Group', 10),
+('0451527887', 'The Hunchback of Notre-Dame', 510, 3, 0, 2001, 'Signet Classics', 10),
+('0553213008', 'A Midsummer Night\'s Dream', 240, 1, 0, 2016, 'Simon & Schuster', 1),
+('0679720201', 'The Stranger', 123, 1, 0, 1989, 'Vintage', 3),
+('0679720218', 'The Plague', 320, 1, 0, 1991, 'Vintage', 3),
+('0679720225', 'The Fall', 147, 1, 0, 1991, 'Vintage', 3),
+('0679722762', 'Ulysses', 783, 2, 0, 1990, 'Vintage', 7),
+('0684804522', 'The Garden of Eden', 248, 2, 0, 2003, 'Scribner', 5),
+('0684830493', 'The Old Man and the Sea', 96, 3, 0, 1996, 'Scribner', 5),
+('0743297334', 'The Sun Also Rises', 320, 3, 0, 2006, 'Simon & Schuster', 5),
+('0743477123', 'Hamlet', 289, 1, 0, 2005, 'Cambridge University Press', 1),
+('1410122930', 'King Lear', 338, 2, 0, 2005, 'Penguin Books', 1),
+('1411820082', 'The Myth of Sisyphus', 192, 3, 0, 2000, 'Penguin Classics', 3),
+('1421808307', 'Burmese Days', 276, 1, 0, 2005, '1st World Library', 2),
+('1443434973', '1984', 416, 1, 0, 2014, 'Harper Perennial', 2),
+('1451694725', 'Macbeth', 249, 2, 0, 2013, 'Simon Schuster', 1),
+('1524732540', 'Brown: Poems', 161, 1, 0, 2018, 'Knopf Publishing Group', 4),
+('1580491650', 'Dubliners', 190, 3, 0, 2006, 'Prestwick House', 7),
+('1580495788', 'Romeo and Juliet', 301, 2, 0, 2004, 'Simon Schuster', 1),
+('1593766351', 'Knockout', 205, 1, 0, 2016, 'Soft Skull Press', 9);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `user`
+--
+
+CREATE TABLE `user` (
+  `userID` int(10) NOT NULL,
+  `username` varchar(20) NOT NULL,
+  `userType` int(10) NOT NULL,
+  `password` varchar(20) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `user`
+--
+
+INSERT INTO `user` (`userID`, `username`, `userType`, `password`) VALUES
+(1, 'gin', 1, 'dontlook'),
+(2, 'george', 2, 'ilovegin');
+
 --
 -- Indexes for dumped tables
 --
@@ -120,6 +211,19 @@ ALTER TABLE `Book`
   ADD KEY `AuthorID` (`AuthorID`);
 
 --
+-- Indexes for table `MyBooks`
+--
+ALTER TABLE `MyBooks`
+  ADD PRIMARY KEY (`ISBN`),
+  ADD KEY `AuthorID` (`AuthorID`);
+
+--
+-- Indexes for table `user`
+--
+ALTER TABLE `user`
+  ADD PRIMARY KEY (`userID`);
+
+--
 -- AUTO_INCREMENT for dumped tables
 --
 
@@ -128,6 +232,12 @@ ALTER TABLE `Book`
 --
 ALTER TABLE `Author`
   MODIFY `AuthorID` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+
+--
+-- AUTO_INCREMENT for table `user`
+--
+ALTER TABLE `user`
+  MODIFY `userID` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
