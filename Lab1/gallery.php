@@ -57,7 +57,6 @@
     </div>
 </div>
 
-<!-- Container for the image gallery -->
 
 </body>
 

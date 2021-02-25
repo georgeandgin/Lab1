@@ -24,13 +24,7 @@
 
 <div class="browse">
 
-<form action="">
-  <label for="author">Author:</label><br>
-  <input type="text" id="author" name="author" value=""><br>
-  <label for="title">Title:</label><br>
-  <input type="text" id="title" name="title" value=""><br><br>
-  <input type="submit" value="Search">
-</form> 
+
 
 <div class="chosen">
     <h1> Choose books </h1>
