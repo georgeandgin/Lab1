@@ -38,7 +38,37 @@
 
   <div class="main">
   <h2 style="margin:5%"> Your secret image uploads...</h2>
+    <form action="addPic.php" method="">>
+      
+    <input type="submit" name="NewPic" value="NewPic">
+
+    </form>
     <div id="gallery">
+
+    <?php
+    
+
+    
+    $curl = curl_init();
+
+    curl_setopt_array($curl,[
+      CURLOPT_RETURNTRANSFER => 1,
+      CURLOPT_URL => "https://picsum.photos/200/300?grayscale"
+    ]);
+
+    $response = curl_exec($curl);
+
+    echo $response;
+    
+    curl_close($curl);
+
+    ?>
+
+    <?php
+    echo "<img src='https://picsum.photos/200/300?grayscale'"
+    ?>
+
+
       <?php
 
         $query = "SELECT fileName from GalleryImages";
@@ -52,6 +82,12 @@
         }
 
         $stmt->close();
+
+       ?>
+
+       <?php
+
+
 
        ?>
     </div>
