@@ -65,8 +65,30 @@
     ?>
 
     <?php
-    echo "<img src='https://picsum.photos/200/300?grayscale'"
+    //echo "<img src='https://picsum.photos/200/300?grayscale'"
     ?>
+    <?php
+      
+      /*if(isset($_POST['addPic'])) { 
+        $url = "https://picsum.photos/200/300?grayscale";
+        $data = json_decode(file_get_contents($url), true);
+        echo "addedPic: ", $data;
+        echo '<br>'; 
+      } */
+
+      if(isset($_POST['addPic'])) { 
+
+        echo "<img src='https://picsum.photos/200/300?grayscale'";
+      } 
+  ?> 
+
+
+<form method="post"> 
+        <input type="submit" name="addPic"
+                value="AddPic"/> 
+</form>
+
+
 
 
       <?php
