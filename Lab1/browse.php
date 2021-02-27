@@ -42,7 +42,7 @@
 
       while ($stmt->fetch()){
         if ($NoCopies > 0){
-        echo "<li> <b> $Title </b><i>published $PubYear with $NoPages pages </i>
+          echo "<li> <b> $Title </b><i>published $PubYear with $NoPages pages </i>
         - Only $NoCopies copies left! <form action='reserve.php' method='POST'>
         <input type='hidden' name='ISBN' value='$ISBN'>
         <button type='submit' onclick='mybooks.php''>Reserve</button></form></li>";

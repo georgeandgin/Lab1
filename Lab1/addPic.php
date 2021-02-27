@@ -1,5 +1,7 @@
 <?php
    
-   echo "<img src='https://picsum.photos/200/300?grayscale'"
+   echo "<img class='display' src='https://picsum.photos/200/300?grayscale'>";
+
+   header("Location: gallery.php");
    
 ?>
