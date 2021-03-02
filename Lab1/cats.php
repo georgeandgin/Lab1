@@ -52,14 +52,18 @@
         echo '<br>'; 
       } 
       if(isset($_POST['catBreed'])) { 
-        $url = "https://catfact.ninja/breeds?limit=1";
-        $data = json_decode(file_get_contents($url), true);
-  
-        echo $data;
-       // echo "breed: ", $data['data']$data['breed'];
+        $ch = curl_init();
+        curl_setopt($ch, CURLOPT_URL, "https://catfact.ninja/breeds?limit=20");
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+        $response = curl_exec($ch);
+        $data = json_decode($response);
+        $breed = $data->data[rand(0,19)]->breed;
+        echo "breed: ", $breed;
         echo '<br>';
+        curl_close($ch);
       } 
   ?> 
+
 
 
 <form method="post"> 
@@ -70,30 +74,5 @@
                 value="catBreed"/> 
 </form>
 
-
-
-
-</br></br>
-<button>Cat fact</button>
-<br>
-https://catfact.ninja/fact
-</br>
-<?php
-        $url = "https://catfact.ninja/fact";
-        $data = json_decode(file_get_contents($url), true);
-        echo "fact: ", $data['fact'];
-        echo '<br>';
-?>
-</br></br>
-<button>Breed</button>
-</br>
-https://catfact.ninja/breeds?limit=1
-</br>
-<?php
-        $url = "https://catfact.ninja/breeds?limit=1";
-        $data = json_decode(file_get_contents($url), true);
-        //echo "breed: ", $data['data:breed'];
-        echo '<br>';
-?>
 </body>
 </html>
