@@ -31,10 +31,15 @@
 
 
     <?php
-      $query = "SELECT * from book";
-      $stmt;
+      $query = "SELECT c.relationshipID, c.AuthorID, c.ISBN, b.Title, b.NoCopies, 
+      b.PubYear, b.NoPages,
+      GROUP_CONCAT(' ', a.firstName, ' ', a.lastName) AS Authors
+      FROM AuthorBook c INNER JOIN Author a 
+      ON c.AuthorID = a.AuthorID INNER JOIN Book b ON c.ISBN = b.ISBN
+      GROUP BY c.ISBN";
+
       $stmt = $db->prepare($query);
-      $stmt->bind_result($ISBN, $Title, $NoPages, $NoEdition, $NoCopies, $PubYear, $Publisher, $AuthorID);
+      $stmt->bind_result($relationshipID, $AuthorID, $ISBN, $Title, $NoCopies, $PubYear, $NoPages, $Authors);
       $stmt->execute();
 
       echo "<ul>";
@@ -42,7 +47,7 @@
 
       while ($stmt->fetch()){
         if ($NoCopies > 0){
-          echo "<li> <b> $Title </b><i>published $PubYear with $NoPages pages </i>
+          echo "<li> <b> $Title </b><i>published $PubYear with $NoPages pages by $Authors</i>
         - Only $NoCopies copies left! <form action='reserve.php' method='POST'>
         <input type='hidden' name='ISBN' value='$ISBN'>
         <button type='submit' onclick='mybooks.php''>Reserve</button></form></li>";
